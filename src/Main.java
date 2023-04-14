@@ -1,4 +1,5 @@
 import java.time.chrono.MinguoChronology;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args)
@@ -44,13 +45,13 @@ public class Main {
     public static void task3() {
         {System.out.println("задача 3");}
         int[] arr = generateRandomArray();
-        int averageSum = 0;
-        for (int i = 0; i < arr.length; i++){
-            averageSum += arr[i]/arr.length;
-        }
-        System.out.println("Средняя сумма трат за месяц составила "+averageSum+" рублей.");
-
+        float sum = 0;
+        for (int i = 0; i < arr.length; i++)
+            sum += arr[i];{
+            float averageSum = sum / arr.length;
+            System.out.println(averageSum);}
     }
+
 
     public static void task4() {
         {System.out.println("задача 4");}
@@ -64,6 +65,8 @@ public class Main {
 
 
 }
+
+
 
 
 
