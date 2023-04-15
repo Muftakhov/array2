@@ -22,9 +22,9 @@ public class Main {
         {System.out.println("задача 1");}
         int[] arr = generateRandomArray();
         int sum =0;
-        for (int i = 0; i < arr.length; i++){
-            sum += arr[i];}
-            System.out.println("Сумма трат за месяц составила "+sum+" рублей");
+        for (int i = 0; i < arr.length; i++)
+            sum += arr[i];
+        System.out.println("Сумма трат за месяц составила "+sum+" рублей");
       }
 
     public static void task2() {
@@ -47,19 +47,17 @@ public class Main {
         int[] arr = generateRandomArray();
         float sum = 0;
         for (int i = 0; i < arr.length; i++)
-            sum += arr[i];{
-            float averageSum = sum / arr.length;
-            System.out.println("Средняя сумма трат за месяц составила " + averageSum+" рублей.");}
+            sum += arr[i];
+        float averageSum = sum / arr.length;
+        System.out.println("Средняя сумма трат за месяц составила " + averageSum+" рублей.");
     }
 
 
     public static void task4() {
         {System.out.println("задача 4");}
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length-1; i >=0; i--){
-
-                System.out.print(reverseFullName [i] +"" );
-            }
+        for (int i = reverseFullName.length-1; i >=0; i--)
+            System.out.print(reverseFullName [i] +"" );
 
     }
 
